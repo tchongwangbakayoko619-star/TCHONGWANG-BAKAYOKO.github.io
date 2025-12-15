@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Tchongwang Bakayoko - Développeur Full Stack Python/Django & Data Science">
+    <meta name="keywords" content="Développeur Full Stack, Python, Django, Data Science, Machine Learning, Portfolio">
+    <meta name="author" content="Tchongwang Bakayoko">
+    <title>Tchongwang Bakayoko | Développeur Full Stack & Data Scientist</title>
+    
+    <!-- Open Graph pour LinkedIn/WhatsApp -->
+    <meta property="og:title" content="Tchongwang Bakayoko - Portfolio Développeur">
+    <meta property="og:description" content="Développeur Full Stack spécialisé Python/Django et Data Science">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tchongwangbakayoko.github.io">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Font Awesome pour icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- CSS Mobile -->
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <!-- Ajoutez après les autres liens CSS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- EmailJS initialisation is handled in `script.js` via EMAILJS_CONFIG.PUBLIC_KEY -->
+</head>
+<body>
+    <!-- Navigation Fixed -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">TB</span>
+                <span class="logo-text">
+                    <span class="logo-name">TCHONGWANG BAKAYOKO</span>
+                    <span class="logo-title">Développeur Full Stack</span>
+                </span>
+            </a>
+            
+            <div class="nav-right">
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link active" role="menuitem"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem"><i class="fas fa-user"></i> À propos</a></li>
+                    <li role="none"><a href="#skills" class="nav-link" role="menuitem"><i class="fas fa-code"></i> Compétences</a></li>
+                    <li role="none"><a href="#projects" class="nav-link" role="menuitem"><i class="fas fa-briefcase"></i> Projets</a></li>
+                    <li role="none"><a href="#experience" class="nav-link" role="menuitem"><i class="fas fa-chart-line"></i> Expérience</a></li>
+                    <li role="none"><a href="#contact" class="nav-link cta-nav" role="menuitem"><i class="fas fa-paper-plane"></i> Contact</a></li>
+                </ul>
+                
+                <!-- Mode Switch -->
+                <div class="theme-switch">
+                    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                    <label for="theme-toggle" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+                
+                <!-- Menu Mobile -->
+                <button class="menu-toggle" aria-label="Menu mobile" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>👋 Hello, je suis</span>
+                </div>
+                <h1 class="hero-title">Tchongwang <span class="highlight">Bakayoko</span></h1>
+                <h2 class="hero-subtitle">Développeur Full Stack & <span class="typewriter">Data Scientist</span></h2>
+                
+                <p class="hero-description">
+                    Je conçois et développe des applications web performantes et des solutions d'intelligence artificielle 
+                    qui transforment les données en valeur business.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> Voir mes projets
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-comment"></i> Discutons
+                    </a>
+                    <a href="assets/docs/CV_TCHONGWANG_BAKAYOKO.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Télécharger CV
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Projets réalisés</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Années d'expérience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Technologies maîtrisées</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="assets/images/Profil.jpg" alt="Tchongwang Bakayoko - Développeur Full Stack" class="hero-image">
+                    <div class="tech-badges">
+                        <div class="tech-badge" style="--delay: 0">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-badge" style="--delay: 1">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-badge" style="--delay: 2">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="tech-badge" style="--delay: 3">
+                            <i class="fas fa-brain"></i>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Descendre">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" role="region" aria-labelledby="about-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">À PROPOS DE MOI</span>
+                <h2 id="about-title" class="section-title">Mon parcours & ma passion</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="assets/images/Profil.jpg" alt="Tchongwang Bakayoko en réunion de travail" class="about-image">
+                    <div class="experience-card">
+                        <div class="exp-number">3+</div>
+                        <div class="exp-text">Années d'expérience en développement</div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-intro">
+                        <p>
+                            <strong>Développeur Full Stack passionné</strong> par la création de solutions digitales innovantes, 
+                            avec une spécialisation en <strong>Python/Django</strong> pour le back-end et une expertise en 
+                            <strong>Data Science</strong> pour extraire de la valeur des données.
+                        </p>
+                        
+                        <p>
+                            Mon approche combine <strong>rigueur technique</strong> et <strong>sens business</strong>, 
+                            permettant de transformer des problématiques complexes en applications fonctionnelles 
+                            et intuitives.
+                        </p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Développement Full Stack</h3>
+                            <p>Création d'applications web complètes, de l'architecture à l'interface utilisateur</p>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Data Science</h3>
+                            <p>Analyse prédictive, machine learning et visualisation de données</p>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Architecture Logicielle</h3>
+                            <p>Conception de solutions scalables et maintenables</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> Travaillons ensemble
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills" role="region" aria-labelledby="skills-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">EXPERTISE TECHNIQUE</span>
+                <h2 id="skills-title" class="section-title">Stack technique & compétences</h2>
+            </div>
+            
+            <div class="skills-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="backend">Back-End</button>
+                    <button class="tab-btn" data-tab="frontend">Front-End</button>
+                    <button class="tab-btn" data-tab="datascience">Data Science</button>
+                    <button class="tab-btn" data-tab="tools">Outils & DevOps</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <!-- Back-End Tab -->
+                    <div class="tab-pane active" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Python</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 95%"></div>
+                                            <span class="level-text">Expert</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Django, Flask, FastAPI, Pandas, NumPy</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Bases de données</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 90%"></div>
+                                            <span class="level-text">Avancé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>MySQL, PostgreSQL, SQLite, MongoDB</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-php"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>PHP</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                            <span class="level-text">Avancé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Laravel, Composer, Eloquent ORM</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>API & Architecture</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 88%"></div>
+                                            <span class="level-text">Avancé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>REST APIs, Microservices, MVC</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Front-End Tab -->
+                    <div class="tab-pane" id="frontend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>JavaScript</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                            <span class="level-text">Avancé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>ES6+, DOM Manipulation, Async/Await</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>HTML5/CSS3</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 90%"></div>
+                                            <span class="level-text">Expert</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Responsive Design, Flexbox, Grid, Animations</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-vuejs"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Frameworks Front</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                            <span class="level-text">Intermédiaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Vue.js, React (en apprentissage)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Data Science Tab -->
+                    <div class="tab-pane" id="datascience">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Analyse de données</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 85%"></div>
+                                            <span class="level-text">Avancé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Pandas, NumPy, Matplotlib, Seaborn</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Machine Learning</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 80%"></div>
+                                            <span class="level-text">Intermédiaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Scikit-learn, TensorFlow, Keras</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Traitement de données</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 82%"></div>
+                                            <span class="level-text">Intermédiaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Data cleaning, Feature engineering, EDA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools Tab -->
+                    <div class="tab-pane" id="tools">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-git-alt"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Version Control</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 90%"></div>
+                                            <span class="level-text">Expert</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Git, GitHub, GitLab</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-terminal"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>DevOps</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 75%"></div>
+                                            <span class="level-text">Intermédiaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Docker, CI/CD, Linux</p>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h3>Outils de développement</h3>
+                                        <div class="skill-level">
+                                            <div class="level-bar" style="width: 88%"></div>
+                                            <span class="level-text">Avancé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>VS Code, Jupyter, Postman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-cta">
+                <p>💡 <strong>Je m'adapte rapidement</strong> aux nouvelles technologies et méthodologies.</p>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-laptop-code"></i> Voir mes réalisations
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects" role="region" aria-labelledby="projects-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">PORTFOLIO</span>
+                <h2 id="projects-title" class="section-title">Projets récents & cas d'étude</h2>
+                <p class="section-description">
+                    Découvrez une sélection de mes projets les plus significatifs, 
+                    illustrant mes compétences techniques et mon approche méthodologique.
+                </p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 - Django Invoice -->
+                <article class="project-card" data-category="fullstack web">
+                    <div class="project-badge">Full Stack</div>
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2hKxKTDbYwp_nrZV_8qzE9pjpub97cxdFQ&s" alt="Système de facturation Django">
+                        <div class="project-overlay">
+                            <a href="./projects/projet1/django-invoice-system-main/" class="project-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Système de Facturation Professionnel</h3>
+                        <p class="project-description">
+                            Application complète de gestion et génération de factures avec multi-utilisateurs, 
+                            multi-langues et export PDF automatisé.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">ReportLab</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h4>Fonctionnalités clés :</h4>
+                            <ul>
+                                <li>Gestion multi-entreprises et multi-utilisateurs</li>
+                                <li>Génération automatisée de PDF</li>
+                                <li>Interface d'administration avancée</li>
+                                <li>Support FR/EN avec i18n</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/tchongwangbakayoko619-star/django-invoice-system" class="btn btn-small" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Détails du projet
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Projet 2 - Paiement Scolaire -->
+                <article class="project-card" data-category="fullstack web">
+                    <div class="project-badge">Production</div>
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbk3iU-KGSuzBtE1NGqnGLC3bEcOZtBROO9Q&s" alt="Application de paiement scolaire">
+                        <div class="project-overlay">
+                            <a href="./projects/projet2/applicatain-gestion-de-payement-de-pension-scolaire-main/" class="project-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Code Source
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plateforme de Paiement Scolaire</h3>
+                        <p class="project-description">
+                            Solution SaaS complète pour la gestion des paiements scolaires avec intégration 
+                            de passerelle de paiement et tableau de bord analytique.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CinetPay API</span>
+                            <span class="tech-tag">Vite.js</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h4>Fonctionnalités clés :</h4>
+                            <ul>
+                                <li>Intégration API CinetPay pour paiements en ligne</li>
+                                <li>Rôles multiples (Admin, École, Parent)</li>
+                                <li>Génération de reçus et rapports</li>
+                                <li>Tableau de bord analytique en temps réel</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/tchongwangbakayoko619-star/school-payment-system" class="btn btn-small" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Détails du projet
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Projet 3 - Titanic ML -->
+                <article class="project-card" data-category="data">
+                    <div class="project-badge">Data Science</div>
+                    <div class="project-image">
+                        <img src="data:image/jpeg;base64,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" alt="Analyse prédictive Titanic">
+                        <div class="project-overlay">
+                            <a href="./projects/projet3/" class="project-link" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> Notebook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analyse Prédictive - Titanic</h3>
+                        <p class="project-description">
+                            Projet complet de Machine Learning avec exploration des données, 
+                            feature engineering et optimisation de modèles prédictifs.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h4>Résultats obtenus :</h4>
+                            <ul>
+                                <li>Nettoyage et préparation avancée des données</li>
+                                <li>Feature engineering créatif</li>
+                                <li>Comparaison de 2 algorithmes ML</li>
+                                <li>Précision finale : 77% (top 15% Kaggle)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/tchongwangbakayoko619-star/titanic-ml-analysis" class="btn btn-small" target="_blank">
+                                <i class="fas fa-chart-line"></i> Analyse complète
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="projects-cta">
+                <p>🚀 <strong>Plus de projets en cours de développement !</strong></p>
+                <a href="https://github.com/tchongwangbakayoko619-star" class="btn btn-primary" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i> Voir tous mes projets GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience" role="region" aria-labelledby="experience-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">PARCOURS PROFESSIONNEL</span>
+                <h2 id="experience-title" class="section-title">Expérience & Formation</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - Présent</div>
+                        <h3 class="timeline-title">École Nationale Supérieure Polytechnique de Douala</h3>
+                        <div class="timeline-subtitle">Master en Science des Données & IA</div>
+                        <ul class="timeline-description">
+                            <li>Spécialisation en Machine Learning et Deep Learning</li>
+                            <li>Analyse de données massives et traitement du langage naturel</li>
+                            <li>Projets de recherche en intelligence artificielle</li>
+                            <li>Préparation pour une carrière en Data Science</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2025</div>
+                        <h3 class="timeline-title">Institut Universitaire de Bandjoun - IUT</h3>
+                        <div class="timeline-subtitle">DUT en Génie Logiciel</div>
+                        <ul class="timeline-description">
+                            <li>Formation complète en développement logiciel</li>
+                            <li>Projets pratiques en développement web et mobile</li>
+                            <li>Obtention du diplôme avec mention</li>
+                            <li>Acquisition des bases solides en programmation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Présent</div>
+                        <h3 class="timeline-title">Développeur Full Stack Freelance</h3>
+                        <div class="timeline-subtitle">Projets divers | Remote</div>
+                        <ul class="timeline-description">
+                            <li>Développement d'applications web sur-mesure avec Django/Laravel</li>
+                            <li>Conception d'APIs RESTful pour clients internationaux</li>
+                            <li>Optimisation de bases de données et performances</li>
+                            <li>Collaboration avec des équipes Agile/Scrum</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">En parallèle</div>
+                        <h3 class="timeline-title">Centres d'intérêts</h3>
+                        <div class="timeline-subtitle">Mangas & Football</div>
+                        <ul class="timeline-description">
+                            <li>Passionné de mangas (Fullmetal Alchemist, Black Clover, Jujutsu Kaisen, One Piece, Naruto, Demon Slayer...)</li>
+                            <li>Grand amateur de football (supporteur de Chelsea)</li>
+                            <li>Équilibre entre passion tech et loisirs</li>
+                            <li>Apprentissage continu et développement personnel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" role="region" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">PRENONS CONTACT</span>
+                <h2 id="contact-title" class="section-title">Travaillons ensemble</h2>
+                <p class="section-description">
+                    Vous avez un projet ? Une opportunité ? Discutons-en !
+                    Je suis ouvert aux collaborations, opportunités freelance et positions full-time.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Pour toute question ou proposition</p>
+                            <a href="mailto:tchongwangbakayoko619@gmail.com" class="contact-link">
+                                tchongwangbakayoko619@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>Connectons-nous professionnellement</p>
+                            <a href="https://www.linkedin.com/in/tchongwang-bakayoko-6a6755391" class="contact-link" target="_blank" rel="noopener">
+                                linkedin.com/in/tchongwang-bakayoko
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>Découvrez mon code et mes projets</p>
+                            <a href="https://github.com/tchongwangbakayoko619-star" class="contact-link" target="_blank" rel="noopener">
+                                github.com/tchongwangbakayoko619-star
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>CV Téléchargeable</h3>
+                            <p>Profil complet et détaillé</p>
+                            <a href="assets/docs/CV_TCHONGWANG_BAKAYOKO.pdf" class="btn btn-small" download>
+                                <i class="fas fa-download"></i> Télécharger mon CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dans la section Contact, remplacez le formulaire actuel par : -->
+<div class="contact-form-container">
+    <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+            <label for="name">Nom complet *</label>
+            <input type="text" id="name" name="user_name" required placeholder="Votre nom">
+            <div class="error-message" id="name-error"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="user_email" required placeholder="votre@email.com">
+            <div class="error-message" id="email-error"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="subject">Sujet *</label>
+            <input type="text" id="subject" name="user_subject" required placeholder="Objet de votre message">
+            <div class="error-message" id="subject-error"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet ou opportunité..."></textarea>
+            <div class="error-message" id="message-error"></div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary submit-btn">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+        </button>
+        
+        <div class="form-status" id="form-status"></div>
+    </form>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">TB</span>
+                        <span class="logo-text">TCHONGWANG BAKAYOKO</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Développeur Full Stack passionné par la création de solutions innovantes
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#skills">Compétences</a></li>
+                            <li><a href="#projects">Projets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Ressources</h4>
+                        <ul>
+                            <li><a href="assets/docs/CV_TCHONGWANG_BAKAYOKO.pdf" download>CV PDF</a></li>
+                            <li><a href="#projects">Portfolio</a></li>
+                            <li><a href="https://github.com/tchongwangbakayoko619-star" target="_blank" rel="noopener">GitHub</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Technologies</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://github.com/tchongwangbakayoko619-star" aria-label="GitHub" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tchongwang-bakayoko-6a6755391" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:tchongwangbakayoko619@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2025</span> TCHONGWANG BAKAYOKO. Tous droits réservés.</p>
+                    <p class="footer-note">
+                        <i class="fas fa-heart"></i> Conçu et développé avec passion
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>
